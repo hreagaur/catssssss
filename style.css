@@ -41,10 +41,26 @@ div>ul{
         
 }
 #logo{
-  width: 15%;
-  border-radius: 90%;
+  width: 10%;
   padding:auto;
   margin: auto;
   display: block;
+  bottom:30%;
+}
+#logo-container {
+  padding:0; /* Adjust padding as needed */
+  text-align: center;
+  border: 0;
+  top:20px;
+}
+
+#banner-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+}
+
+#banner {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
 }
 
