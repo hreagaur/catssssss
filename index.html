@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hreo&Bella</title>
 </head>
 <body>
     <div id="logo-container">
@@ -18,7 +18,121 @@
         </ul> 
     </div>
     <div id="banner-container">
-        <img id="banner" src="/pics/cat_banner.jpg" alt="cat banner">
+        <img id="banner" src="/pics/cat banner.png" alt="cat banner">
+    </div>
+<h3 class="heading">Some of the commonly asked questions about doll-face cats</h3>
+    <!-- Dropdown Box for FAQ -->
+    <div class="grid-container">
+        <div class="dropdown">
+            <button class="dropbtn">What is a "doll face" Persian cat?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>A "doll face" Persian cat refers to a traditional or classic facial structure with a more open appearance, as opposed to the flat-faced or "peke-faced" structure found in some modern Persian cats.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">How to care for a kitten?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>Kittens require proper nutrition, regular vet check-ups, and lots of love and playtime.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Are doll face Persians healthier than flat-faced Persians?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>Many believe that doll face Persians tend to have fewer respiratory and eye issues compared to flat-faced Persians. The more traditional facial structure allows for easier breathing and reduces the risk of certain health issues.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">What are the grooming needs for doll face Persians?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>Doll face Persians still have long, luxurious fur that requires regular grooming. Daily brushing helps prevent matting, and attention to eye cleaning is important due to their facial structure.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">What are some distinct features that characterize the appearance of a doll face Persian cat?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>Doll face Persian cats typically have a more open and rounded facial structure, with a normal-length nose and a forehead that aligns with their nose. Their eyes are large and expressive, contributing to their sweet and endearing appearance.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">What are some distinct features that characterize the appearance of a doll face Persian cat?</button>
+            <div class="dropdown-content">
+                <div class="faq-item">
+                    <h3>Doll face Persian cats typically have a more open and rounded facial structure, with a normal-length nose and a forehead that aligns with their nose. Their eyes are large and expressive, contributing to their sweet and endearing appearance.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="image-info-section">
+        <img class="cat-image" src="pics/cat logo.png" alt="Cat Image">
+        <div class="cat-info">
+            <h2>Meet Our Doll Face Persian Cat</h2>
+            <p>Age: 2 years</p>
+            <p>Qualities: Playful, Affectionate, Gentle</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="image-info-section">
+        <img class="cat-image" src="pics/DSC_0018.JPG" alt="Another Cat Image">
+        <div class="cat-info">
+            <h2>Meet Another Doll Face Persian Cat</h2>
+            <p>Age: 3 years</p>
+            <p>Qualities: Playful, Curious, Independent</p>
+            <p>Description: Another cat's description goes here.</p>
+        </div>
     </div>
 </body>
+<footer>
+    <h3>Contact Us</h3>
+    <p>Email: info@hreoandbella.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Address: 123 Cat Street, Kittyville</p>
+</footer>
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Function to handle the scroll event
+        function handleScroll() {
+            const imageInfoSection = document.querySelector('.image-info-section');
+            const catImage = document.querySelector('.cat-image');
+            const catInfo = document.querySelector('.cat-info');
+
+            if (isInViewport(imageInfoSection)) {
+                imageInfoSection.style.opacity = '1';
+                imageInfoSection.style.transform = 'translateY(0)';
+            }
+
+            if (isInViewport(catImage)) {
+                catImage.style.transform = 'translateY(0)';
+            }
+
+            if (isInViewport(catInfo)) {
+                catInfo.style.opacity = '1';
+            }
+        }
+
+        // Add the scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // Trigger initial check on page load
+        handleScroll();
+    </script>
 </html>
