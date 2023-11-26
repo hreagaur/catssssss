@@ -175,3 +175,21 @@ footer{
   margin: auto;
   ;
 }
+.kitten-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap-reverse;
+  margin-top: 10px; 
+}
+
+.kitten-section {
+  width: 30%; 
+  text-align: center;
+  margin-bottom: 10px; 
+}
+
+.kitten-pic {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
