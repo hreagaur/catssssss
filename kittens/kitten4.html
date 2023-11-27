@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten 1</title>
+    <style>
+        header {
+            background-color: #cd873a;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+
+        #slider-container {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        #image-slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-image {
+            width: 100%;
+            height: auto; 
+            max-height: 350px; 
+            object-fit: cover;
+        }
+
+        #kitten-info {
+            text-align: center;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo-container">
+        <img id="logo" src="/pics/cats.png" alt="no pic">
+    </div>  
+    <div>
+        <ul>
+            <li><a href="/contact.html">Adopt a kitten</a></li>
+            <li><a href="/kittens.html">Kittens</a></li>
+            <li><a href="/index.html">Home</a></li>
+        </ul> 
+    </div>
+    <header>
+        <h1>Kitten 2</h1>
+    </header>
+    <div id="slider-container">
+        <div id="image-slider">
+            <img class="slider-image" src="/pics/hreo.JPG" alt="Kitten 1 Image 1">
+            <img class="slider-image" src="/pics/hreo.JPG" alt="Kitten 1 Image 2">
+            <img class="slider-image" src="/pics/hreo.JPG" alt="Kitten 1 Image 3">
+            <img class="slider-image" src="/pics/hreo.JPG" alt="Kitten 1 Image 4">
+        </div>
+    </div>
+
+    <div id="kitten-info">
+        <h2>Name: Kitten 1</h2>
+        <p>Date of Birth: [Insert Date]</p>
+        <p>Time of Birth: [Insert Time]</p>
+        <p>Nature: [Insert Nature]</p>
+        <p>Gender: [Insert Gender]</p>
+    </div>
+    <script>
+        let currentIndex = 0;
+        const slider = document.getElementById('image-slider');
+        const images = document.querySelectorAll('.slider-image');
+        const totalImages = images.length;
+        const transitionDuration = 500; 
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateSlider();
+        }
+    
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            slider.style.transition = `transform ${transitionDuration}ms ease-in-out`;
+            slider.style.transform = 'translateX(' + translateValue + ')';
+        }
+    
+        setInterval(showNextImage, 3000); 
+    </script>
+     <footer>
+        <h3>Contact Us</h3>
+        <p>Email: info@hreoandbella.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Cat Street, Kittyville</p>
+    </footer>    
+</body>
+</html>
