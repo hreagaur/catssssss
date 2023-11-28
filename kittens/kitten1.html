@@ -78,7 +78,7 @@
         const slider = document.getElementById('image-slider');
         const images = document.querySelectorAll('.slider-image');
         const totalImages = images.length;
-        const transitionDuration = 500; // Transition duration in milliseconds
+        const transitionDuration = 500; 
     
         function showNextImage() {
             currentIndex = (currentIndex + 1) % totalImages;
@@ -91,12 +91,8 @@
             slider.style.transform = 'translateX(' + translateValue + ')';
         }
     
-        setInterval(showNextImage, 3000); // Change image every 3 seconds
+        setInterval(showNextImage, 3000); 
     </script>
-    
-    
-    
-    
     <footer>
         <h3>Contact Us</h3>
         <p>Email: info@hreoandbella.com</p>
