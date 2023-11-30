@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        /* Styles for the banner container */
+        #banner-container {
+          position: relative;
+          background-size: cover;
+          width: 100%;
+          max-width: 1200px; /* Adjust the max-width as needed */
+          margin:0;
+          overflow: hidden; /* Ensure the container doesn't overflow */
+        }
+    
+        /* Style for the banner image */
+        #banner {
+          width: 100%;
+          height: 90%;
+          display: block;
+          background-image: url(pics/bg.png);
+          z-index: 0;
+        }
+    
+        /* Additional styles for text overlay (if needed) */
+        #banner .overlay {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: #fff; /* Text color */
+        }
+    
+        /* Media query for mobile responsiveness */
+        @media screen and (max-width: 767px) {
+          #banner-container {
+            background: url('/pics/Im\ Bella\ the\ mommy.png') center/cover no-repeat; /* Mobile background image style */
+          }
+        }
+      </style>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +45,7 @@
 </head>
 <body>
     <div id="logo-container">
-        <img id="logo" src="/pics/cats.png" alt="no pic">
+        <img id="logo" src="" alt="no pic">
     </div>  
     <div>
         <ul>
@@ -18,8 +55,17 @@
         </ul> 
     </div>
     <div id="banner-container">
-        <img id="banner" src="/pics/cat banner.png" alt="cat banner">
-    </div>
+        <!-- Transparent Image -->
+        <!-- Text Overlay (Optional) -->
+        <div class="overlay">
+            <h1>Your Banner Text</h1>
+            <p>Additional description or call-to-action</p>
+          </div>
+        <img id="banner" src="/pics/bella.png" alt="Cat Banner">
+    
+        
+      </div>
+    
 <hr>
 <h3 class="heading">Some of the commonly asked questions about doll-face cats</h3>
 
