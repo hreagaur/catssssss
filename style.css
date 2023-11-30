@@ -135,9 +135,9 @@ div>ul {
 }
 .parent-cat-info {
   margin-bottom: 10px;
-  display: flex;
+  border-left: 20%;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: #565655;
 }
 .parent-cat-info h3{
@@ -146,7 +146,8 @@ div>ul {
 }
 
 .parent-cat-info p {
-  text-align: left;
+  text-align: center;
+  font-size:20px;
 }
 
 .parent-cat-info img {
