@@ -32,7 +32,7 @@ li a {
 }
 
 li a:hover {
-  background-color: rgba(9, 115, 168, 0.5);
+  background-color: #0973a880;
 }
 
 div>ul {
@@ -51,16 +51,45 @@ div>ul {
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-
 #banner-container {
-  text-align: center;
-  margin-top: 10px;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; 
 }
 
 #banner {
-  width: 99%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
+  display: block;
+  background-image: url('pics/cat banner.png');
+  z-index: 1;
 }
+
+/* Additional styles for text overlay (if needed) */
+#banner .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Text color */
+}
+
+/* Media query for mobile responsiveness */
+@media screen and (max-width: 767px) {
+  #banner-container {
+    background: url('pics/bg.png') center/cover no-repeat; /* Mobile background image style */
+  }
+  #banner {
+    background-image: url('pics/bella.png');
+  }
+}
+
+
+
 .heading{
   font-family:Kristen ITC;
   font-size:medium;

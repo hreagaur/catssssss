@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <style>
-        /* Styles for the banner container */
+       
         #banner-container {
           position: relative;
           background-size: cover;
           width: 100%;
-          max-width: 1200px; /* Adjust the max-width as needed */
+          max-width: 1200px;
           margin:0;
-          overflow: hidden; /* Ensure the container doesn't overflow */
+          overflow: hidden; 
         }
     
         /* Style for the banner image */
@@ -17,7 +17,7 @@
           width: 100%;
           height: 90%;
           display: block;
-          background-image: url(pics/bg.png);
+          /* background-image: url(pics/bg.png); */
         }
     
         /* Additional styles for text overlay (if needed) */
@@ -33,7 +33,10 @@
         /* Media query for mobile responsiveness */
         @media screen and (max-width: 767px) {
           #banner-container {
-            background: url('/pics/') center/cover no-repeat; /* Mobile background image style */
+            background: url('/pics/bg.png') center/cover no-repeat; /* Mobile background image style */
+          }
+          #banner{
+            background-image: url(pics/bella.png);
           }
         }
       </style>
@@ -54,8 +57,6 @@
         </ul> 
     </div>
     <div id="banner-container">
-        <!-- Transparent Image -->
-        <!-- Text Overlay (Optional) -->
         <div class="overlay">
             <h1>Your Banner Text</h1>
             <p>Additional description or call-to-action</p>
@@ -135,11 +136,15 @@
 </div>
   
   <!-- Parent Cat 2 - Bella -->
-<div class="parent-cat-info">
-    <h3>Bella (Mums)</h3>
+  <div class="parent-cat-info">
+    <center><h3>Bella (mum)</h3>
+    <img class="parent-cat-image" src="/pics/hreo.JPG" alt="Hreo Image">
     <p><strong>Birthdate:</strong> December 06, 2022<br>
-       <strong>Personality:</strong> Bella is a caring and shy cat. She displays a gentle and nurturing demeanor, creating a warm and comforting atmosphere. While shy, she is known for her loving and protective nature.</p>
-    <img class="parent-cat-image" src="/pics/hreo.JPG" alt="Bella Image">
+    <strong>Personality:</strong> Hreo is a social and friendly boy.
+     He loves to pat new people, making him a welcoming presence. 
+     His outgoing nature makes him a joy to be around.</p></center>
+    
+</div>
   </div>
 <footer>
     <h3>Contact Us</h3>
